@@ -43,7 +43,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       background: var(--background-color);
       color: var(--main-color);
 }
@@ -55,8 +54,8 @@ body {
 }
 
 .container {
-      margin: var(--spacing-md);
-      max-width: min(100%, 30rem);
+      margin: var(--spacing-xxl) var(--spacing-md) var(--spacing-md);
+      max-width: min(100%, 50rem);
       background: var(--secondary-background);
       border-radius: var(--radius);
 }
