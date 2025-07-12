@@ -10,7 +10,9 @@
       --font-sm: clamp(0.75rem, 1.2vw, 0.875rem);
       --font-md: clamp(0.875rem, 1.5vw, 1.05rem);
       --font-lg: clamp(1.1rem, 2vw, 1.2rem);
+      --font-llg: clamp(1.5rem, 2vw, 2rem);
       --font-xl: clamp(2.5rem, 1.7vw, 3.5rem);
+      --font-xll: clamp(3rem, 1.7vw, 3.5rem);
 
       --spacing-min: 0.4rem;
       --spacing-sm: 0.5rem;
@@ -103,7 +105,7 @@ main p {
 .new-price {
       color: var(--secondary-color);
       font-family: var(--font-heading);
-      font-size: var(--spacing-xll);
+      font-size: var(--font-xll);
       font-weight: bolder;
 }
 
@@ -118,10 +120,6 @@ main p {
       color: var(--secondary-color);
 }
 
-.cart-link:hover {
-      color: var(--hover-color);
-}
-
 .cart-container {
       background: var(--secondary-color);
       margin: var(--spacing-lg) var(--spacing-xl);
@@ -131,6 +129,16 @@ main p {
       display: flex;
       gap: var(--spacing-md);
       justify-content: center;
+      align-items: center;
+}
+
+.cart-container p {
+      font-size: var(--font-lg);
+}
+
+.cart-container:hover {
+      background: var(--hover-color);
+      font-weight: bold;
 }
 
 .container-footer {
