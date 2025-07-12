@@ -3,7 +3,7 @@
       --secondary-background: white;
       --main-color: black;
       --secondary-color: rgb(20, 124, 29);
-      --hover-color: rgb (3, 58, 3);
+      --hover-color: rgb(3, 58, 3);
 
       --font-heading: 'Fraunces', serif;
       --font-body: 'Montserrat', sans-serif;
@@ -105,6 +105,16 @@ main p {
       display: flex;
 }
 
+.cart-link {
+      text-decoration: none;
+      display: block;
+      color: var(--secondary-color);
+}
+
+.cart-link:hover {
+      color: var(--hover-color);
+}
+
 .cart-container {
       background: var(--secondary-color);
       margin: var(--spacing-lg) var(--spacing-xl);
@@ -135,5 +145,5 @@ main p {
 
 .container-footer p a:hover {
       text-decoration: underline;
-      color: var(--secondary-color);
+      color: var(--hover-color);
 }
