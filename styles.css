@@ -1,5 +1,5 @@
 :root {
-      --background-color: rgb(247, 233, 225);
+      --background-color: rgb(255, 94, 0);
       --secondary-background: white;
       --main-color: black;
       --secondary-color: rgb(20, 124, 29);
@@ -55,7 +55,8 @@ body {
 
 .container {
       margin: var(--spacing-xxl) var(--spacing-md) var(--spacing-md);
-      max-width: min(100%, 50rem);
+      max-width: min(100%, 30rem);
+      min-height: 100svh;
       background: var(--secondary-background);
       border-radius: var(--radius);
 }
