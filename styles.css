@@ -2,7 +2,7 @@
       --background-color: rgb(247, 233, 225);
       --secondary-background: white;
       --main-color: black;
-      --secondary-color: rgb(20, 124, 29);
+      --secondary-color: rgb(4, 97, 12);
       --hover-color: rgb(3, 58, 3);
 
       --font-heading: 'Fraunces', serif;
@@ -10,13 +10,14 @@
       --font-sm: clamp(0.75rem, 1.2vw, 0.875rem);
       --font-md: clamp(0.875rem, 1.5vw, 1.05rem);
       --font-lg: clamp(1.1rem, 2vw, 1.2rem);
-      --font-xl: clamp(1.4rem, 3vw, 1.82rem);
+      --font-xl: clamp(2.5rem, 1.7vw, 3.5rem);
 
       --spacing-min: 0.4rem;
       --spacing-sm: 0.5rem;
       --spacing-md: 1rem;
       --spacing-lg: 1.5rem;
       --spacing-xl: 2rem;
+      --spacing-xll: 2.3rem;
       --spacing-xxl: 4rem;
 
       --radius: 0.5rem;
@@ -31,12 +32,12 @@
 
 @font-face {
       font-family: 'montserrat';
-      src: url('assets/fonts/Montserrat-Regular.otf');
+      src: url('assets/fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
       font-family: 'Fraunces';
-      src: url('assets/fonts/Fraunces_72pt-Regular.ttf');
+      src: url('assets/fonts/Fraunces_72pt-Bold.ttf');
 }
 
 body {
@@ -71,32 +72,38 @@ header img {
 
 header p {
       margin: 0 var(--spacing-xl);
+      padding: var(--spacing-md) 0 0;
       letter-spacing: var(--spacing-min);
       font-size: var(--font-md);
 }
 
 header h1 {
       margin: var(--spacing-lg) var(--spacing-xl);
+      padding: var(--spacing-md) 0 0;
       font-family: var(--font-heading);
-      font-weight: 800;
+      font-size: var(--font-xl);
+      line-height: var(--spacing-xll);
 }
 
 main p {
       margin: 0 var(--spacing-xl);
       line-height: var(--spacing-lg);
+      padding: var(--spacing-sm) 0 0;
+      font-size: var(--font-lg);
+      
 }
 
 .price {
       margin: var(--spacing-lg) var(--spacing-xl) var(--spacing-sm);
       display: flex;
       gap: var(--spacing-md);
-      padding: 0;
+      padding: var(--spacing-sm) 0 0;
 }
 
 .new-price {
       color: var(--secondary-color);
       font-family: var(--font-heading);
-      font-size: 220%;
+      font-size: var(--spacing-xll);
       font-weight: bolder;
 }
 
@@ -119,7 +126,7 @@ main p {
       background: var(--secondary-color);
       margin: var(--spacing-lg) var(--spacing-xl);
       color: var(--secondary-background);
-      padding: var(--spacing-md);
+      padding: var(--spacing-xl);
       border-radius: var(--radius);
       display: flex;
       gap: var(--spacing-md);
