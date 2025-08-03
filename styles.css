@@ -23,6 +23,7 @@
       --spacing-xxl: 4rem;
 
       --radius: 0.5rem;
+      --radius-md: 1rem;
 }
 
 * {
@@ -43,7 +44,6 @@
 }
 
 body {
-      display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
@@ -161,4 +161,26 @@ main p {
 .container-footer p a:hover {
       text-decoration: underline;
       color: var(--hover-color);
+}
+
+@media (min-width: 49em) {
+      .container {
+            display: flex;
+            max-width: min(100%, 60rem);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+
+      }
+
+      header img {
+            object-fit: cover;
+            margin: 0;
+            border-radius: var(--radius-md) 0 0 var(--radius-md);
+            height: 100%;
+            width: 220%;
+            
+            
+            
+      }
+
+      
 }
