@@ -29,4 +29,6 @@ body {
 .container article:last-child {
     background-color: #fff;
     padding: 1.5rem;
+    margin-top: -1rem;
+    
 }
