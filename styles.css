@@ -4,10 +4,14 @@
     /* color */
     --background-color1: hsl(30, 27%, 84%);
     --background-color2: #fff;
+    --color: hsl(212, 21%, 14%);
+    --color2: hsl(228, 12%, 48%);
+    --color3: hsl(158, 36%, 37%);
 
     /* font */
     --font-size: 14px;
     --font-family: "Montserrat", sans-serif;
+    --font-family2: "Fraunces", sans-serif;
 
     /* measurements */
     --margin-small: 1rem;
@@ -15,6 +19,7 @@
     --margin-big: 2rem;
     --margin-neg: -1rem;
     --width: 600px;
+    --width2: 100%;
 }
 
 * {
@@ -24,7 +29,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background-color1);
     font-size: var(--font-size);
     font-family: var(--font-family);
     display: flex;
@@ -51,48 +56,48 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: var(--width2);
 }
 
 h1, .price {
-    font-family: "Fraunces", sans-serif;
+    font-family: var(--font-family2);
 }
 
 h1 {
-    color: hsl(212, 21%, 14%);
-    margin-bottom: 1rem;
-    font-size: 2rem;
+    color: var(--color);
+    margin-bottom: var(--margin-small);
+    font-size: var(--margin-big);
 }
 
 h2 {
     font-size: 0.8rem;
     font-weight: 500;
-    color: hsl(228, 12%, 48%);
-    margin: 1rem 0;
+    color: var(--color2);
+    margin: var(--margin-small) 0;
     letter-spacing: 0.2rem;
 }
 
 p {
-    color: hsl(228, 12%, 48%);
+    color: var(--color2);
     line-height: 1.8;
-    margin-bottom: 2rem;
+    margin-bottom: var(--margin-big);
 }
 
 ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: var(--margin-big);
 }
 
 ul li:first-child {
-    font-size: 2rem;
-    margin-right: 1.5rem;
-    color: hsl(158, 36%, 37%);
+    font-size: var(--margin-big);
+    margin-right: var(--margin-normal);
+    color: var(--color3);
 }
 
 ul li:last-child {
-    color: hsl(228, 12%, 48%);
+    color: var(--color2);
 }
 
 button, li {
@@ -100,12 +105,12 @@ button, li {
 }
 
 .btn {
-    background-color: hsl(158, 36%, 37%);
+    background-color: var(--color3);
     color: #fff;
     font-weight: 700;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    width: 100%;
+    padding: var(--margin-small) var(--margin-big);
+    font-size: var(--margin-small);
+    width: var(--width2);
     border: none;
     outline: none;
     cursor: pointer;
@@ -121,12 +126,12 @@ button, li {
 }
 
 .btn:hover {
-    background-color: hsl(158, 38%, 20%);
+    background-color: var(--color3);
 }
 
 .attribution {
     font-size: 14px;
-    margin-top: 2rem;
+    margin-top: var(--margin-big);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +143,7 @@ button, li {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color3);
 }
 
 @media (min-width: 640px) {
@@ -148,17 +153,18 @@ button, li {
     }
 
     .container article:first-child img {
-        border-radius: 1rem 0rem 0rem 1rem;
-        width: 100%;
+        border-radius: var(--margin-small) 0rem 0rem var(--margin-small
+        );
+        width: var(--width2);
     }
 
     .container article:last-child {
-        border-radius: 0rem 1rem 1rem 0rem;
+        border-radius: 0rem  var(--margin-small)  var(--margin-small) 0rem;
         margin-top: 0;
     }
 
     p {
-        margin-bottom: 1rem;
+        margin-bottom:  var(--margin-small);
     }
 
     picture img {
