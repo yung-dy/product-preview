@@ -2,7 +2,7 @@
 
 :root {
     /* color */
-    --background-color1: hsl(30, 27%, 84%);
+    --background-color1: hsl(326, 44%, 94%);
     --background-color2: #fff;
     --color: hsl(212, 21%, 14%);
     --color2: hsl(228, 12%, 48%);
@@ -45,14 +45,14 @@ body {
 }
 
 .container article:first-child img {
-    border-radius: var(--margin-small) var(--margin-small) 0 0;
+    border-radius: 0.6rem 0.6rem 0 0;
 }
 
 .container article:last-child {
     background-color: #fff;
     padding: var(--margin-normal);
     margin-top: var(--margin-neg);
-    border-radius: 0 0 var(--margin-small) var(--margin-small);
+    border-radius: 0 0 0.6rem 0.6rem;
 }
 
 img {
@@ -153,13 +153,12 @@ button, li {
     }
 
     .container article:first-child img {
-        border-radius: var(--margin-small) 0rem 0rem var(--margin-small
-        );
+        border-radius: 0.6rem 0rem 0rem 0.6rem;
         width: var(--width2);
     }
 
     .container article:last-child {
-        border-radius: 0rem  var(--margin-small)  var(--margin-small) 0rem;
+        border-radius: 0rem  0.6rem 0.6rem 0rem;
         margin-top: 0;
     }
 
